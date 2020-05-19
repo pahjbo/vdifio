@@ -1,10 +1,15 @@
 
 Python ctypes bindings for VDIFIO
 
-Requires the ctypes and ctypeslib packages, e.g., in Debian: 
+There is a script generate.py that requires python2 and in turn
+requires the ctypes and ctypeslib packages, e.g., in Debian: 
 aptitude install python-ctypes python-ctypeslib
 
-python setup.py build
+python2 setup.py build
+
+
+can be installed with
+
 python setup.py install
 
 

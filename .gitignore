@@ -1,0 +1,17 @@
+/m4/
+.cproject
+.pydevproject
+Makefile.in
+__pycache__
+/aclocal.m4
+/autom4te.cache/
+/compile
+/config.guess
+/config.h.in
+/config.sub
+/configure
+/depcomp
+/install-sh
+/ltmain.sh
+/missing
+

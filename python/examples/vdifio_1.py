@@ -26,7 +26,9 @@ fps = ctypes.c_int(int(fps))
 t0  = vdifio.time_t(int(time.time()))
 
 hdr = vdifio.vdif_header()
-vdifio.createVDIFHeader(hdr, flen,0,nbits,nchan, 0, 'Tt')
+Sname = ctypes.c_char * 3
+sn = Sname(*b'Tt ')
+vdifio.createVDIFHeader(hdr, flen,0,nbits,nchan, 0, sn)
 vdifio.setVDIFEpochTime(hdr, t0)
 vdifio.setVDIFFrameTime(hdr, t0)
 

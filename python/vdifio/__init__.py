@@ -1,1 +1,1 @@
-from vdifio import *
+from .vdifio import  *
